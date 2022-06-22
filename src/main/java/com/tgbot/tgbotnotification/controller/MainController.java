@@ -6,10 +6,5 @@ import pro.sky.telegrambot.configuration.TelegramBotConfiguration;
 
 @RestController
 public class MainController {
-    private final TelegramBotConfiguration configuration;
-
-    public MainController(TelegramBotConfiguration configuration) {
-        this.configuration = configuration;
-        TelegramBot bot = configuration.telegramBot();
-    }
+    //
 }
