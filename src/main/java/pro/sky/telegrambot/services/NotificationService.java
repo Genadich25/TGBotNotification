@@ -25,8 +25,7 @@ public class NotificationService {
     }
 
     public List<NotificationTask> listToSend(){
-        List<NotificationTask> task = repository.findByTimeEquals(LocalTime.now().truncatedTo(ChronoUnit.MINUTES));
-        return task;
+        return repository.findByTimeEquals(LocalTime.now().truncatedTo(ChronoUnit.MINUTES));
     }
 
     public void deleteNotificationById(Long id){

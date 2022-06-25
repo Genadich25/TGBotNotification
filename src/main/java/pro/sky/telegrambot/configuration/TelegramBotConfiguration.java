@@ -22,7 +22,6 @@ public class TelegramBotConfiguration {
     @Bean
     public TelegramBot telegramBot() {
         TelegramBot bot = new TelegramBot(token);
-        System.out.println("Бин создан");
         bot.execute(new DeleteMyCommands());
         return bot;
     }
